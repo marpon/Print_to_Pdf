@@ -26,7 +26,7 @@
 'usage
 '==============================================================================
 
-#define _YOUR_PATH_TO_FILES_   "D:\freebasic\testlib\"			'notice $ in front of string to avoid warning possible escape sequence on backslash
+		#define _YOUR_PATH_TO_FILES_   "D:\freebasic\testlib\"			'put here the path to files you want
 
 dim as string s_in
 dim as string s_out
