@@ -1,5 +1,5 @@
  /' test example to use libPrint2Pdf32.a or libPrint2Pdf64.a
-	version 1.2 by marpon  12 March 2019
+version 1.2 by marpon  12 March 2019 
 				contact marpon@aliceadsl.fr
 
 
