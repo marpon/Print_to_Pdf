@@ -35,12 +35,12 @@
 						Byval psrc As Zstring Ptr, _		'source file full path to convert to pdf
 						Byval pdest As Zstring Ptr, _		'target file full path  , if null the source file will be used as path with .pdf
 						byval verbose As Long = 0) _		'by defaut not verbose,  if 1 shows errors with MessageBox ; if 2 debugg mode, shows steps to console (adding console if needed)
-						As Long								'  returns 0 on success ;   > 0 if fails : 1 or 2 see meaning under
+						As Long					'  returns 0 on success ;   > 0     if fails : 1 to 13 see meaning under
 
 		' to check if win10 and 'Microsoft Print to Pdf' available
 		Declare Function checkfull Alias "checkfull"( _
 						byval verbose As Long = 0) _        'by defaut not verbose , if <> 0 minimal verbose mode, shows info with MessageBox
-						As Long								'  returns 0 on success ;   > 0 if fails : 1 to 13 see meaning under
+						As Long					'  returns 0 on success ;   > 0      if fails : 1 or 2 see meaning under
 	End Extern
 
 #Endif
