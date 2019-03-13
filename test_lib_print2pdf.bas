@@ -1,5 +1,5 @@
  /' test example to use libPrint2Pdf32.a or libPrint2Pdf64.a
-	version 1.0 by marpon  08 March 2019
+	version 1.2 by marpon  12 March 2019
 				contact marpon@aliceadsl.fr
 
 
@@ -13,7 +13,7 @@
 
 		pictures  as		"bmp", "jpg", "jpeg", "png", "tiff", "gif"
 				it will try to reproduce the 'real size' checking dimensions and dpi resolution
-				and try also to best fit , so rotate 270° when needed.
+				and try also to best fit , so rotate 270Â° when needed.
 
 
  '/
