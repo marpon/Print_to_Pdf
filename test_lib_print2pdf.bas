@@ -26,8 +26,9 @@ version 1.2 by marpon  12 March 2019
 'usage
 '==============================================================================
 
-		#define _YOUR_PATH_TO_FILES_   "D:\freebasic\testlib\"			'put here the path to files you want
-
+		#define _YOUR_PATH_TO_FILES_   $"D:\freebasic\testlib\"			'put here the path to files you want
+											'notice $ in front of string to avoid warning possible escape sequence on backslash
+		
 dim as string s_in
 dim as string s_out
 
