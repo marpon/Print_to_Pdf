@@ -4,7 +4,8 @@ lib to work with 'Microsoft Print to Pdf' virtual printer in 32 and 64bits
 and some sample code to work with.
 
 Print2pdf.bas is the source for creating the Print2Pdf.exe cmd line tool to convert files to pdf.
-the Print2Pdf_32.exe and Print2Pdf_64.exe, are the compiled exe for 32 and 64 bits,
+
+The Print2Pdf_32.exe and Print2Pdf_64.exe, are the compiled exe for 32 and 64 bits,
 given only for the ones who do not know how to use freebasic compiler.
 
 
