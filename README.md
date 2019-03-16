@@ -9,7 +9,7 @@ The Print2Pdf_32.exe and Print2Pdf_64.exe, are the compiled exe for 32 and 64 bi
 given only for the ones who do not know how to use freebasic compiler.
 
 
-version 1.2 by marpon  14 March 2019
+version 1.2 by marpon  13 March 2019
 				contact marpon@aliceadsl.fr
  
  
