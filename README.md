@@ -3,7 +3,7 @@ static lib (for freebasic use) to work with 'Microsoft Print to Pdf' virtual pri
 
 And some sample code to work with.
 
-Print2pdf.bas is the source for creating the Print2Pdf.exe cmd line tool to convert files to pdf.
+Print2pdf.bas is the source for creating the Print2Pdf.exe :   a cmd line tool to convert files to pdf.
 
 The Print2Pdf_32.exe and Print2Pdf_64.exe, are the compiled exe for 32 and 64 bits,
 given only for the ones who do not know how to use freebasic compiler.
