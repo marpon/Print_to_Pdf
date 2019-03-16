@@ -12,7 +12,9 @@ given only for the ones who do not know how to use freebasic compiler.
 static libs version 1.2 by marpon  13 March 2019
 				contact marpon@aliceadsl.fr
  
-some brief information of features 
+some brief information of features :
+
+
 	work in win10 with 'Microsoft Print To Pdf' virtual printer
 		but much better because can be used in batch mode, without prompt for target file name 
 	
