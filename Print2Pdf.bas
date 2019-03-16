@@ -3,7 +3,7 @@
 
 
 #include once "./print2pdf.bi"		' for pdf convertion : txt, pictures
-									'  and more if exists 'Microsoft print to pdf' virtual printer
+					'  and more if exists 'Microsoft print to pdf' virtual printer
 
 #include once "win/tlhelp32.bi"     ' for extended process functions
 #include once "crt/stdio.bi"        ' for c io functions
@@ -11,15 +11,15 @@
 
 function GetWindowsFromProcessID(byval dwProcessID as DWORD, byref wclass as string = "") as HWND
     ' find all hWnds (vhWnds) associated with a process id (dwProcessID)
-    dim as HWND hCurWnd = NULL
+	dim as HWND hCurWnd = NULL
 	dim as dword dwtemp
 	dim as zstring ptr pwclass = strptr(wclass)
-    do
-        hCurWnd = FindWindowEx(NULL, hCurWnd, pwclass, NULL)
-        dwtemp = 0
-        GetWindowThreadProcessId(hCurWnd, @dwtemp)
-        if (dwtemp = dwProcessID) then return hCurWnd
-    loop while (hCurWnd <> NULL)
+	do
+		hCurWnd = FindWindowEx(NULL, hCurWnd, pwclass, NULL)
+		dwtemp = 0
+		GetWindowThreadProcessId(hCurWnd, @dwtemp)
+		if (dwtemp = dwProcessID) then return hCurWnd
+	loop while (hCurWnd <> NULL)
 	return NULL
 end function
 
@@ -70,8 +70,8 @@ function in_console(byval iset as long, byref stitle as string) as long
 		FreeConsole()
 		s__console = 0
 		return 0
-	END IF
-END function
+	end if
+end function
 
 sub restore_true_console(byval ppid as DWORD)
 	dim as hwnd h1 = GetWindowsFromProcessID(ppid, "ConsoleWindowClass") 'to limit search on real console
@@ -83,14 +83,14 @@ sub restore_true_console(byval ppid as DWORD)
 		freeconsole()
 		PostMessage(h1, WM_KEYDOWN, VK_RETURN, 0) 'to restore the normal prompt in cmd console
 		'PostMessage(h1, WM_KEYUP, VK_RETURN, 0)  'press seems enougth , can skip release key
-    END IF
-END SUB
+    	END IF
+end sub
 
 function check_cmd()as long
 	dim as DWORD darr(10)
 	dim as DWORD dcons = GetConsoleProcessList( @darr(0), 10)
 	return (cast(long,dcons)) -1
-END FUNCTION
+end function
 
 
 sub help_usage()
@@ -148,10 +148,10 @@ sub help_usage()
 		printf(!"\n\n%s\n\n", strptr(mess))
 	END IF
 
-END SUB
+end sub
 
 
-
+'main code here
 
 dim as string s_in
 dim as string s_out
