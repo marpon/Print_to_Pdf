@@ -28,7 +28,7 @@
 	#Endif
 
 
-	'the only needed declare function from the lib
+	'the only needed declare functions from the lib
 	Extern "C"
 		' the convert to pdf function
 		Declare Function Print2Pdf Alias "print2pdf"( _
