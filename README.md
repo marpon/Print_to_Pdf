@@ -1,5 +1,5 @@
 # Print_to_Pdf
-lib to work with 'Microsoft Print to Pdf' virtual printer in 32 and 64bits
+static lib (for freebasic use) to work with 'Microsoft Print to Pdf' virtual printer in 32 and 64bits
 
 And some sample code to work with.
 
