@@ -1,4 +1,5 @@
-'Print2Pdf.bi v: 1.2
+'Print2Pdf.bi v: 1.2   13 March 2019
+'                      marpon  marpon@aliceadsl.fr 
 
 #Pragma Once
 
@@ -7,12 +8,12 @@
     #Define _PRINT2PDF_BI_
 
 	#Include Once "windows.bi"
-	#Include Once "win\winspool.bi"				 	 ' for default printer
+	#Include Once "win\winspool.bi"			 ' for default printer
 	#Include Once "win\psapi.bi"                     ' for process
-	#Include Once "win/shellapi.bi"                  ' for shellexecute
-	#Include Once "file.bi"							 ' for fileexists
+	#Include Once "win\shellapi.bi"                  ' for shellexecute
+	#Include Once "file.bi"				 ' for fileexists
 
-	#Include Once "win/gdiplus.bi"					 ' for converting picture format to jpg and rotate
+	#Include Once "win\gdiplus.bi"			 ' for converting picture format to jpg and rotate
 
 	Using gdiplus
 
@@ -49,12 +50,12 @@
 returned  message code meaning
 0	Ok
 1	windows version < 10  so 'Microsoft Print to Pdf' virtual printer not be possible ,  only raw txt and bmp; jpg ; jpeg; gif; png; tif will work
-2	'Microsoft Print to Pdf' virtual printer not installed , 							 only raw txt and bmp; jpg ; jpeg; gif; png; tif will work
+2	'Microsoft Print to Pdf' virtual printer not installed ,                             only raw txt and bmp; jpg ; jpeg; gif; png; tif will work
 3	No defined file to convert to pdf
 4	Wrong Source file full path
 5	Given destination folder does not exist
 10	Using 'Microsoft Print to Pdf' error : Impossible to proceed
 11	Using 'Microsoft Print to Pdf' error, probably : Type of file	does no have known application to print with
-12  Using 'Microsoft Print to Pdf' error : internal execution problem (ShellExecute)
-13  Using 'Microsoft Print to Pdf' error : internal execution problem, application to print with does not open
+12	Using 'Microsoft Print to Pdf' error : internal execution problem (ShellExecute)
+13	Using 'Microsoft Print to Pdf' error : internal execution problem, application to print with does not open
 '/
