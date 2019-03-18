@@ -8,7 +8,7 @@
 
 sub help_usage()
 	dim as string mess = chr(10,10)
-	mess &=  "Print2Pdf.exe  v:1.0    16-March-2019    by marpon   contact : marpon@aliceadsl.fr" & chr(10)
+	mess &=  "Print2Pdf.exe  v:1.3    18-March-2019    by marpon   contact : marpon@aliceadsl.fr" & chr(10)
 	mess &=  "     It's a free command line tool to convert various files to pdf," & chr(10)
 	mess &=  "     it could (in win10), depending the files, use : 'Microsoft Print to Pdf' virtual printer to proceed." & chr(10,10,10)
 	mess &=  "Usage  :  Print2Pdf [option] [replace] ""Full_File_Path_for_File_to_Convert""  [""Full_File_Path_for_Pdf""]" & chr(10,10)
