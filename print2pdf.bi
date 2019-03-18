@@ -1,4 +1,8 @@
 'Print2Pdf.bi v: 1.3  18 March 2019     by Marpon   marpon@aliceadsl.fr
+'
+'  better console states
+'  new overwrite parameter in Print2Pdf function
+'  more error code returned
 
 #Pragma Once
 
