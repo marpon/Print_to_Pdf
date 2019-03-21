@@ -12,6 +12,8 @@ A batch file to test launching print2pdf
 The Print2Pdf.exe and Print2Pdf_64.exe, are the compiled exe for 32 and 64 bits,
 given only for the ones who do not know how to use freebasic compiler.
 
+Same for Win2Pdf.exe Win2Pdf_64.exe...
+
 
 static libs version 1.4 by marpon  21 March 2019
 				contact marpon@aliceadsl.fr
